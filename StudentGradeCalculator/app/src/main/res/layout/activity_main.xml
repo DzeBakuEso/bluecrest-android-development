@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Student Grade Calculator - screen layout -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student Grade Calculator"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <!-- 1. Student name -->
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Student name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+
+    <!-- 2a. Continuous assessment marks -->
+    <EditText
+        android:id="@+id/etCa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Continuous assessment marks"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp" />
+
+    <!-- 2b. Examination marks -->
+    <EditText
+        android:id="@+id/etExam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Examination marks"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp" />
+
+    <!-- 3. Calculate button -->
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Calculate" />
+
+    <!-- 6. Result: name, total and grade -->
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textSize="20sp"
+        android:text="" />
+
+</LinearLayout>
